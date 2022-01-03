@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+/*(main background)*/
+$Very-dark-blue : hsl(233, 47%, 7%);
+
+/*(card background)*/
+$Dark-desaturated-blue : hsl(244, 38%, 16%);
+$Soft-violet: hsl(277, 64%, 61%);
+
+/*(main heading, stats)*/
+$White : hsl(0, 0%, 100%);
+$main-paragraph: hsla(0, 0%, 100%, 0.75);
+$stat-headings: hsla(0, 0%, 100%, 0.6);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 15px;
+    font-family: 'Inter',
+        sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+body {
+    background-color: $Very-dark-blue;
+}
+
+
+.card-component {
+    background-color: $Dark-desaturated-blue;
+    width: 90%;
+    max-width: 1080px;
+    margin: 3em auto;
+    display: grid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header-img {
+    background-color: $Soft-violet;
+    border-radius: 10px 10px 0 0;
+
+    img {
+        border-radius: inherit;
+        height: 100%;
+        opacity: 50%;
+    }
+}
+
+
+
+.stat-preview {
+    padding: 2.5rem;
+
+    h1,
+    h2 {
+        color: $White;
+    }
+
+    h1 {
+        span {
+            color: $Soft-violet;
+        }
+
+        margin-bottom: 1em;
+    }
+
+    .main-paragraph {
+        color: $main-paragraph;
+    }
+
+
+    .stat {
+        margin-top: 2.5rem;
+        font-family: 'Lexend Deca',
+            sans-serif;
+        list-style: none;
+
+        li {
+            margin-bottom: 1em;
+        }
+
+        p {
+            font-variant: small-caps;
+            color: $stat-headings;
+        }
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .card-component {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+        grid-gap: 1em;
+        margin: 10em auto 1em;
+    }
+
+    .header-img {
+        order: 1;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .stat-preview {
+        margin: auto;
+
+        h1 {
+            font-size: 2.3rem;
+        }
+
+        .stat {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .stat-preview {
+        padding: 0 5em;
+    }
+}
