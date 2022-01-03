@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+/*(main background)*/
+/*(card background)*/
+/*(main heading, stats)*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #090b1a;
+}
+
+.card-component {
+  background-color: #1b1938;
+  width: 90%;
+  max-width: 1080px;
+  margin: 3em auto;
+  display: -ms-grid;
+  display: grid;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.header-img {
+  background-color: #aa5cdb;
+  border-radius: 10px 10px 0 0;
+}
+
+.header-img img {
+  border-radius: inherit;
+  height: 100%;
+  opacity: 50%;
+}
+
+.stat-preview {
+  padding: 2.5rem;
+}
+
+.stat-preview h1,
+.stat-preview h2 {
+  color: white;
+}
+
+.stat-preview h1 {
+  margin-bottom: 1em;
+}
+
+.stat-preview h1 span {
+  color: #aa5cdb;
+}
+
+.stat-preview .main-paragraph {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.stat-preview .stat {
+  margin-top: 2.5rem;
+  font-family: 'Lexend Deca', sans-serif;
+  list-style: none;
+}
+
+.stat-preview .stat li {
+  margin-bottom: 1em;
+}
+
+.stat-preview .stat p {
+  font-variant: small-caps;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (min-width: 720px) {
+  .card-component {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    grid-gap: 1em;
+    margin: 10em auto 1em;
+  }
+  .header-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    border-radius: 0 10px 10px 0;
+  }
+  .stat-preview {
+    margin: auto;
+  }
+  .stat-preview h1 {
+    font-size: 2.3rem;
+  }
+  .stat-preview .stat {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .stat-preview {
+    padding: 0 5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
