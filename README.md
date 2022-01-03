@@ -1,11 +1,3 @@
-<style>
-img[alt=mobile] { 
-    width: 50%; 
-    max-width:375px;
-  }
-
-</style>
-
 # Frontend Mentor - Stats preview card component solution
 
 This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -24,7 +16,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -36,8 +27,9 @@ Users should be able to:
 
 
 ### Screenshot
-![desktop](.\main\design\desktop.png)
-![mobile](.\main\design\mobile.png)
+<img src="main/design/mobile.png" width="50%" max-width="375px">
+
+![desktop](./main/design/desktop.png)
 
 
 ### Links
