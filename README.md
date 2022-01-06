@@ -27,9 +27,9 @@ Users should be able to:
 
 
 ### Screenshot
-<img src="main/design/mobile.png" width="50%" max-width="375px">
+<img src="docs/design/mobile.png" width="50%" max-width="375px">
 
-![desktop](./main/design/desktop.png)
+![desktop](./docs/design/desktop.png)
 
 
 ### Links
